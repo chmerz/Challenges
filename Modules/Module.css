@@ -1,0 +1,15 @@
+#title{
+    text-align: center;
+}
+
+#Accelerate {
+    text-align: left;
+}
+
+#Brake {
+    text-align: right;
+}
+
+#myGamePiece {
+    position: absolute
+}
