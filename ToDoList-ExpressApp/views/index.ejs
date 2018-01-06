@@ -1,0 +1,28 @@
+<html>
+  <head>
+  <head>
+  <body>
+    <h2>My TODO Lists</h2>
+
+    <div>
+      <h3>New Todo List</h3>
+      <form
+        action="/todo-list/new"
+        method="post"
+      >
+        <input type='text' name='name' />
+        <input type='submit' value='Add Todo List' />
+      </form>
+</div>
+      <ul>
+        <% for(let index = 0; index < todoLists.length; index++){ %>
+          <% let todoList = todoLists[index] %>
+          <li>
+              <a href="/todo-list/<%= todoList.get('id') %>">
+                <%= todoList.get('name') %>
+              </a>
+          </li>
+          <% } %>
+      </ul>
+  </body>
+</html>
